@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaper/full_screen.dart';
 
 class Screen extends StatefulWidget {
   @override
@@ -23,9 +24,17 @@ class _ScreenState extends State<Screen> {
       padding: EdgeInsets.all(20),
       child: Column(
       children: [
-      Card(
+      InkWell(
+      onTap: () {
+      Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => FullScreen())
+      );
+      },
+      
+      child: Card(
       elevation: 10,
-      child: Container(
+      child: Container(  
       height: 250,
       width: 500,
       decoration: BoxDecoration(
@@ -37,7 +46,8 @@ class _ScreenState extends State<Screen> {
       ),
       ),
       ),
-      
+      ),
+
       SizedBox(height:20),
       Column(
       children: [
