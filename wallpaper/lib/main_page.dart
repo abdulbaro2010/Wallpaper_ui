@@ -19,9 +19,6 @@ class _MainPageState extends State<MainPage> {
         ),
       ),
       body: Container(
-        
-
-        
         alignment: Alignment.center,
         child: Column(
           children: [
